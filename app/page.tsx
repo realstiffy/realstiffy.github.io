@@ -1,5 +1,9 @@
-// Test deployment - {new Date().toISOString()}
+"use client"; // 👈 use it here
+
+import { useState } from "react";
+
 import Image from "next/image";
+import { IoIosLink } from "react-icons/io";
 import {
   FaInstagram,
   FaYoutube,
@@ -10,6 +14,16 @@ import {
 } from "react-icons/fa";
 
 export default function Page() {
+  const [copySuccess, setCopySuccess] = useState(false);
+
+  const handleCopyLink = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    navigator.clipboard.writeText(window.location.href);
+    setCopySuccess(true);
+    setTimeout(() => setCopySuccess(false), 2000);
+  };
+
   return (
     <div className="container">
       <section aria-label="profile-container">
@@ -24,7 +38,7 @@ export default function Page() {
           <h1 className="profile-title">@realstiffy</h1>
           <div className="tiny-social-links-container">
             <a
-              href="https://www.instagram.com/realstiffy"
+              href="https://www.instagram.com/realstiffy?igsh=aXFma3g5b2trcGU2"
               className="tiny-social-link instagram-link"
               target="_blank"
               rel="noopener noreferrer"
@@ -48,7 +62,7 @@ export default function Page() {
               <FaTiktok />
             </a>
             <a
-              href="https://www.twitter.com/realstiffyy"
+              href="https://www.twitter.com/realstiffy"
               className="tiny-social-link twitter-link"
               target="_blank"
               rel="noopener noreferrer"
@@ -60,6 +74,24 @@ export default function Page() {
         </div>
 
         <div className="social-links-container">
+          <a
+            href="https://www.instagram.com/realstiffy?igsh=aXFma3g5b2trcGU2"
+            className="social-link nd-instagram-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+            &nbsp; Sign-up/Referral Link &nbsp;&nbsp;&nbsp;&nbsp;
+            <button
+              onClick={handleCopyLink}
+              className="tiny-social-link copy-link"
+              aria-label="Copy link"
+            >
+              <IoIosLink />
+              Copy
+              {copySuccess && <span className="copy-tooltip">Copied!</span>}
+            </button>
+          </a>
           <a
             href="https://discord.gg/JtU8C9amEs"
             className="social-link discord-link"
@@ -78,15 +110,6 @@ export default function Page() {
             <FaAmazon />
             &nbsp; My Storefront
           </a>
-          {/* <a
-            href="https://instagram.com/realerstiffy"
-            className="social-link nd-instagram-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaInstagram />
-            &nbsp; Meme + Music Account
-          </a> */}
         </div>
       </section>
     </div>
