@@ -81,7 +81,7 @@ export default function Page() {
             rel="noopener noreferrer"
           >
             <FaInstagram />
-            &nbsp; Sign-up/Referral Link &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp; Referral Link &nbsp;&nbsp;&nbsp;&nbsp;
             <button
               onClick={handleCopyLink}
               className="tiny-social-link copy-link"
