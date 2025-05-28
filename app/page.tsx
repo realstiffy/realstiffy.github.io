@@ -19,7 +19,9 @@ export default function Page() {
   const handleCopyLink = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText(
+      "https://www.instagram.com/realstiffy?igsh=aXFma3g5b2trcGU2"
+    );
     setCopySuccess(true);
     setTimeout(() => setCopySuccess(false), 2000);
   };
