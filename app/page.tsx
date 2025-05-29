@@ -33,8 +33,8 @@ export default function Page() {
           <Image
             src="/stiffy_pfp.png"
             alt="realstiffy"
-            width={96}
-            height={96}
+            width={196}
+            height={196}
             className="profile-image"
           />
           <h1 className="profile-title">@realstiffy</h1>
