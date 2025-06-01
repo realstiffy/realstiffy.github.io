@@ -65,7 +65,7 @@ export default function Page() {
               <FaTiktok />
             </a>
             <a
-              href="https://www.twitter.com/realstiffy"
+              href="https://www.twitter.com/realstiffyy"
               className="tiny-social-link twitter-link"
               target="_blank"
               rel="noopener noreferrer"
