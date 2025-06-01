@@ -118,6 +118,11 @@ body {
   color: #5865f2;
 }
 
+.twitch-link {
+  background-color: black;
+  color: #9146ff;
+}
+
 .nd-instagram-link {
   background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
   color: white;

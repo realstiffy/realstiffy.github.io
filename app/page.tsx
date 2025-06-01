@@ -11,6 +11,7 @@ import {
   FaAmazon,
   FaTwitter,
   FaDiscord,
+  FaTwitch,
 } from "react-icons/fa";
 
 export default function Page() {
@@ -33,8 +34,8 @@ export default function Page() {
           <Image
             src="/stiffy_pfp.png"
             alt="realstiffy"
-            width={196}
-            height={196}
+            width={130}
+            height={130}
             className="profile-image"
           />
           <h1 className="profile-title">@realstiffy</h1>
@@ -111,6 +112,15 @@ export default function Page() {
           >
             <FaAmazon />
             &nbsp; My Storefront
+          </a>
+          <a
+            href="https://twitch.tv/guythemartian"
+            className="social-link twitch-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTwitch />
+            &nbsp; Twitch
           </a>
         </div>
       </section>
