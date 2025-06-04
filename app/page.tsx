@@ -32,7 +32,7 @@ export default function Page() {
       <section aria-label="profile-container">
         <div className="profile-header">
           <Image
-            src="/stiffy_pfp.png"
+            src="/stiffy_pfp.svg"
             alt="realstiffy"
             width={130}
             height={130}
