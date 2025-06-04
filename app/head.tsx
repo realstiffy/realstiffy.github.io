@@ -43,6 +43,8 @@ export default function Head() {
         />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="realstiffy" />
+
+        <link rel="stylesheet" href="/styles/globals.css" />
       </head>
     </>
   );
