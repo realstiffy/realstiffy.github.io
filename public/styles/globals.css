@@ -124,8 +124,8 @@ body {
 }
 
 .nd-instagram-link {
-  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
-  color: white;
+  background-color: black;
+  color: #ed1327;
 }
 
 /* Icon styles */

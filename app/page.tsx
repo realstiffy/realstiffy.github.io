@@ -12,6 +12,7 @@ import {
   FaTwitter,
   FaDiscord,
   FaTwitch,
+  FaTshirt,
 } from "react-icons/fa";
 
 export default function Page() {
@@ -42,7 +43,7 @@ export default function Page() {
           <h1 className="profile-title">@realstiffy</h1>
           <div className="tiny-social-links-container">
             <a
-              href="https://www.instagram.com/realstiffy?igsh=aXFma3g5b2trcGU2"
+              href="https://www.instagram.com/realstiffy"
               className="tiny-social-link instagram-link"
               target="_blank"
               rel="noopener noreferrer"
@@ -79,22 +80,13 @@ export default function Page() {
 
         <div className="social-links-container">
           <a
-            href="https://www.instagram.com/realstiffy?igsh=aXFma3g5b2trcGU2"
+            href="https://www.realdrippy.com"
             className="social-link nd-instagram-link"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaInstagram />
-            &nbsp; Referral Link &nbsp;&nbsp;&nbsp;&nbsp;
-            <button
-              onClick={handleCopyLink}
-              className="tiny-social-link copy-link"
-              aria-label="Copy link"
-            >
-              <IoIosLink />
-              Copy
-              {copySuccess && <span className="copy-tooltip">Copied!</span>}
-            </button>
+            <FaTshirt />
+            &nbsp; Merch
           </a>
           <a
             href="https://discord.gg/JtU8C9amEs"
