@@ -97,7 +97,7 @@ export default function Page() {
             <FaDiscord />
             &nbsp; Discord Server
           </a>
-          <a
+          {/* <a
             href="https://www.amazon.com/shop/realstiffy"
             className="social-link amazon-link"
             target="_blank"
@@ -105,7 +105,7 @@ export default function Page() {
           >
             <FaAmazon />
             &nbsp; My Storefront
-          </a>
+          </a> */}
           <a
             href="https://twitch.tv/guythemartian"
             className="social-link twitch-link"
