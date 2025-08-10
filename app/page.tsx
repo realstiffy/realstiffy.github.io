@@ -59,7 +59,7 @@ export default function Page() {
               <FaYoutube />
             </a>
             <a
-              href="https://www.tiktok.com/@realstiffy"
+              href="https://www.tiktok.com/@guythemartian"
               className="tiny-social-link tiktok-link"
               target="_blank"
               rel="noopener noreferrer"
